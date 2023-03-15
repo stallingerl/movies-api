@@ -24,7 +24,6 @@ function App() {
     setName(keyword);
   };
 
-
   const fetchMovies = async () => {
     const { data } = await Axios.get(
       "https://j37rcp3eo2.execute-api.eu-central-1.amazonaws.com/prod/list-movies"
@@ -46,7 +45,7 @@ function App() {
         value={name}
         onChange={filter}
         className="input"
-        placeholder="Filter by movie name"
+        placeholder="Search movie by title"
       />
 
       <div className="user-list">
@@ -62,9 +61,19 @@ function App() {
             </li>
           ))
         ) : (
-          <h1>No results found!</h1>
+          movies.map((movie) => (
+            <li key={movie.name} className="user">
+              <span className="user-id">{movie.name} </span>
+              <span className="user-name">({movie.year})</span>
+              <span className="user-age">
+                {" "}
+                by {movie.director.firstName} {movie.director.lastName}
+              </span>
+            </li>
+          ))
         )}
       </div>
+      <div className="addNewMovie"></div>
     </div>
   );
 }
