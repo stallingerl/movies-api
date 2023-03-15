@@ -39,7 +39,7 @@
 
 .container {
   padding-top: 30px;
-  width: 450px;
+  width: 800px;
   margin: auto;
 }
 
@@ -59,18 +59,22 @@
   background: #eee;
   display: flex;
   justify-content: space-between;
+  width: auto;
 }
 
 .user-id {
   color: rgb(56, 12, 12);
   font-weight: bold;
   margin-right: 20px;
+  width: 300px;
 }
 
 .user-name {
   color: blue;
+  width: 100px;
 }
 
 .user-age {
   margin-left: auto;
+  width: fit-content
 }

@@ -53,11 +53,14 @@ function App() {
           foundUsers.map((movie) => (
             <li key={movie.name} className="user">
               <span className="user-id">{movie.name} </span>
-              <span className="user-name">({movie.year})</span>
+              <span className="user-name">({movie.year}) </span>
               <span className="user-age">
                 {" "}
-                by {movie.director.firstName} {movie.director.lastName}
+                directed by {movie.director.firstName} {movie.director.lastName} 
+                <p>
+                {movie.synopsis}</p>
               </span>
+              
             </li>
           ))
         ) : (
