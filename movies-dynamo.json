@@ -1,0 +1,1299 @@
+{
+    "name": {
+        "S": "Avengers: Endgame"
+    },
+    "year": {
+        "N": "2018"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Sci-fi"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "4"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Robert"
+                    },
+                    "lastName": {
+                        "S": " Downey Jr."
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Chris"
+                    },
+                    "lastName": {
+                        "S": "Evans"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Scarlett"
+                    },
+                    "lastName": {
+                        "S": "Johansson"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Anthony"
+            },
+            "lastName": {
+                "S": "Russo"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+    },
+    "name": {
+        "S": "The Curse of the Were-Rabbit"
+    },
+    "year": {
+        "N": "2005"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Animation"
+            },
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Comedy"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "4"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Peter"
+                    },
+                    "lastName": {
+                        "S": " Sallis"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Ralph"
+                    },
+                    "lastName": {
+                        "S": "Fiennes"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Steve"
+            },
+            "lastName": {
+                "S": "Box"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "Wallace and his loyal dog, Gromit, set out to discover the mystery behind the garden sabotage that plagues their village and threatens the annual giant vegetable growing contest."
+    },
+    "name": {
+        "S": "Downtown Abbey"
+    },
+    "year": {
+        "N": "2019"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Drama"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "7"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Michelle"
+                    },
+                    "lastName": {
+                        "S": " Dockery"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Matthew"
+                    },
+                    "lastName": {
+                        "S": "Goode"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Tuppence"
+                    },
+                    "lastName": {
+                        "S": "Middleton"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Michael"
+            },
+            "lastName": {
+                "S": "Enger"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "The continuing story of the Crawley family, wealthy owners of a large estate in the English countryside in the early 20th century."
+    },
+    "name": {
+        "S": "Ad Astra"
+    },
+    "year": {
+        "N": "2019"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Drama"
+            },
+            {
+                "S": "Mystery"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Brad"
+                    },
+                    "lastName": {
+                        "S": " Pitt"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Tommy"
+                    },
+                    "lastName": {
+                        "S": "Lee Jones"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "James"
+            },
+            "lastName": {
+                "S": "Grey"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "Astronaut Roy McBride undertakes a mission across an unforgiving solar system to uncover the truth about his missing father and his doomed expedition that now, 30 years later, threatens the universe."
+    },
+    "name": {
+        "S": "The Dark Crystal"
+    },
+    "year": {
+        "N": "1982"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Familty"
+            },
+            {
+                "S": "Fantasy"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Jim"
+                    },
+                    "lastName": {
+                        "S": " Henson"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Catherine"
+                    },
+                    "lastName": {
+                        "S": "Mullen"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Frank"
+                    },
+                    "lastName": {
+                        "S": "Oz"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Jim"
+            },
+            "lastName": {
+                "S": "Henson"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "On another planet in the distant past, a Gelfling embarks on a quest to find the missing shard of a magical crystal, and so restore order to his world."
+    },
+    "name": {
+        "S": "Aliens"
+    },
+    "year": {
+        "N": "1986"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Action"
+            },
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Sci-fi"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "16"
+    },
+    "rating": {
+        "N": "5"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Sigourney"
+                    },
+                    "lastName": {
+                        "S": " Weaver"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "James"
+            },
+            "lastName": {
+                "S": "Cameron"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "Ellen Ripley is rescued by a deep salvage team after being in hypersleep for 57 years. The moon that the Nostromo visited has been colonized, but contact is lost. This time, colonial marines have impressive firepower, but will that be enough?"
+    },
+    "name": {
+        "S": "2001: A Space Odyssey"
+    },
+    "year": {
+        "N": "1986"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Sci-fi"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "8"
+    },
+    "rating": {
+        "N": "5"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Keir"
+                    },
+                    "lastName": {
+                        "S": " Dullea"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Gary"
+                    },
+                    "lastName": {
+                        "S": " Lockwood"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Stanley"
+            },
+            "lastName": {
+                "S": "Kubrick"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000."
+    },
+    "name": {
+        "S": "Tolkien"
+    },
+    "year": {
+        "N": "2019"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Biography"
+            },
+            {
+                "S": "Drama"
+            },
+            {
+                "S": "War"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "2"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Nicholas"
+                    },
+                    "lastName": {
+                        "S": " Dullea"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Lily"
+                    },
+                    "lastName": {
+                        "S": " Collins"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Dome"
+            },
+            "lastName": {
+                "S": "Karkukoski"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "The formative years of the orphaned author J.R.R. Tolkien as he finds friendship, love and artistic inspiration among a group of fellow outcasts at school."
+    },
+    "name": {
+        "S": "The Shape of Water"
+    },
+    "year": {
+        "N": "2017"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Drama"
+            },
+            {
+                "S": "Fantasy"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "16"
+    },
+    "rating": {
+        "N": "4"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Sally"
+                    },
+                    "lastName": {
+                        "S": "Hawkins"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Michael"
+                    },
+                    "lastName": {
+                        "S": "Shannon"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Octavia"
+                    },
+                    "lastName": {
+                        "S": "Spencer"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Guillermo"
+            },
+            "lastName": {
+                "S": "del Toro"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "At a top secret research facility in the 1960s, a lonely janitor forms a unique relationship with an amphibious creature that is being held in captivity."
+    },
+    "name": {
+        "S": "Vertigo"
+    },
+    "year": {
+        "N": "1958"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Mystery"
+            },
+            {
+                "S": "Romance"
+            },
+            {
+                "S": "Thriller"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "5"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "James"
+                    },
+                    "lastName": {
+                        "S": "Stewart"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Kim"
+                    },
+                    "lastName": {
+                        "S": "Novak"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Barbara"
+                    },
+                    "lastName": {
+                        "S": "Bel Geddes"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Alfred"
+            },
+            "lastName": {
+                "S": "Hitchcock"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "A former police detective juggles wrestling with his personal demons and becoming obsessed with a hauntingly beautiful woman."
+    },
+    "name": {
+        "S": "Blade Runner 2049"
+    },
+    "year": {
+        "N": "2017"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Action"
+            },
+            {
+                "S": "Drama"
+            },
+            {
+                "S": "Mystery"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "15"
+    },
+    "rating": {
+        "N": "5"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Ryan"
+                    },
+                    "lastName": {
+                        "S": "Gosling"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Harrison"
+                    },
+                    "lastName": {
+                        "S": "Ford"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Robin"
+                    },
+                    "lastName": {
+                        "S": "Wright"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Denis"
+            },
+            "lastName": {
+                "S": "Villeneuve"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years."
+    },
+    "name": {
+        "S": "Drive"
+    },
+    "year": {
+        "N": "2011"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Crime"
+            },
+            {
+                "S": "Drama"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "18"
+    },
+    "rating": {
+        "N": "4"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Ryan"
+                    },
+                    "lastName": {
+                        "S": "Gosling"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Carey"
+                    },
+                    "lastName": {
+                        "S": "Mulligan"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Nicholas"
+            },
+            "lastName": {
+                "S": "Winding Refn"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "A mysterious Hollywood stuntman and mechanic moonlights as a getaway driver and finds himself in trouble when he helps out his neighbor."
+    },
+    "name": {
+        "S": "Dumb and Dumber"
+    },
+    "year": {
+        "N": "1994"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Comedy"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "12"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Jim"
+                    },
+                    "lastName": {
+                        "S": "Carrey"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Jeff"
+                    },
+                    "lastName": {
+                        "S": "Daniels"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Lauren"
+                    },
+                    "lastName": {
+                        "S": "Holly"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Peter"
+            },
+            "lastName": {
+                "S": "Farrelly"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen, to return the briefcase to its owner."
+    },
+    "name": {
+        "S": "Raiders of the Lost Ark"
+    },
+    "year": {
+        "N": "1981"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Action"
+            },
+            {
+                "S": "Adventure"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "0"
+    },
+    "rating": {
+        "N": "4"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Harrison"
+                    },
+                    "lastName": {
+                        "S": "Ford"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Karen"
+                    },
+                    "lastName": {
+                        "S": "Allen"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Steven"
+            },
+            "lastName": {
+                "S": "Spielberg"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler's Nazis can obtain its awesome powers."
+    },
+    "name": {
+        "S": "Gremlins"
+    },
+    "year": {
+        "N": "1984"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Comedy"
+            },
+            {
+                "S": "Fantasy"
+            },
+            {
+                "S": "Horror"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "15"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Hoyt"
+                    },
+                    "lastName": {
+                        "S": "Axton"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "John"
+                    },
+                    "lastName": {
+                        "S": "Louie"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Joe"
+            },
+            "lastName": {
+                "S": "Dante"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "A boy inadvertently breaks three important rules concerning his new pet and unleashes a horde of malevolently mischievous monsters on a small town."
+    },
+    "name": {
+        "S": "The Florida Project"
+    },
+    "year": {
+        "N": "2017"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Drama"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "15"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Brooklynn"
+                    },
+                    "lastName": {
+                        "S": "Prince"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Christopher"
+                    },
+                    "lastName": {
+                        "S": "Rivera"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Willem"
+                    },
+                    "lastName": {
+                        "S": "Dafoe"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Sean"
+            },
+            "lastName": {
+                "S": "Baker"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "Set over one summer, the film follows precocious six-year-old Moonee as she courts mischief and adventure with her ragtag playmates and bonds with her rebellious but caring mother, all while living in the shadows of Walt Disney World."
+    },
+    "name": {
+        "S": "Predator"
+    },
+    "year": {
+        "N": "1987"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Action"
+            },
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Sci-fi"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "18"
+    },
+    "rating": {
+        "N": "4"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Arnold"
+                    },
+                    "lastName": {
+                        "S": "Schwarzenegger"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Carl"
+                    },
+                    "lastName": {
+                        "S": "Weathers"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "John"
+            },
+            "lastName": {
+                "S": "McTiernan"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior."
+    },
+    "name": {
+        "S": "Spirited Away"
+    },
+    "year": {
+        "N": "2001"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Animation"
+            },
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Family"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "0"
+    },
+    "rating": {
+        "N": "5"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Rumi"
+                    },
+                    "lastName": {
+                        "S": "Hiiragi"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Miyu"
+                    },
+                    "lastName": {
+                        "S": "Irino"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Hayao"
+            },
+            "lastName": {
+                "S": "Miyazaki"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts."
+    },
+    "name": {
+        "S": "Saving Private Ryan"
+    },
+    "year": {
+        "N": "1998"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Drama"
+            },
+            {
+                "S": "War"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "15"
+    },
+    "rating": {
+        "N": "3"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Tom"
+                    },
+                    "lastName": {
+                        "S": "Hanks"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Tom"
+                    },
+                    "lastName": {
+                        "S": "Sizemore"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Edward"
+                    },
+                    "lastName": {
+                        "S": "Burns"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Steven"
+            },
+            "lastName": {
+                "S": "Spielberg"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action."
+    },
+    "name": {
+        "S": "Rambo: Last Blood"
+    },
+    "year": {
+        "N": "2019"
+    },
+    "genres": {
+        "L": [
+            {
+                "S": "Action"
+            },
+            {
+                "S": "Adventure"
+            },
+            {
+                "S": "Thriller"
+            }
+        ]
+    },
+    "ageLimit": {
+        "N": "18"
+    },
+    "rating": {
+        "N": "2"
+    },
+    "actors": {
+        "L": [
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Sylvester"
+                    },
+                    "lastName": {
+                        "S": "Stallone"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Paz"
+                    },
+                    "lastName": {
+                        "S": "Vega"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "firstName": {
+                        "S": "Yvette"
+                    },
+                    "lastName": {
+                        "S": "Monreal"
+                    }
+                }
+            }
+        ]
+    },
+    "director": {
+        "M": {
+            "firstName": {
+                "S": "Adrian"
+            },
+            "lastName": {
+                "S": "Grunberg"
+            }
+        }
+    },
+    "synopsis": {
+        "S": "Rambo must confront his past and unearth his ruthless combat skills to exact revenge in a final mission."
+    }
+}

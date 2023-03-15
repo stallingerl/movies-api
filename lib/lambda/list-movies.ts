@@ -13,8 +13,8 @@ const ddbClient = DynamoDBDocumentClient.from(
   })
 );
 
-interface CustomerItem {
-  CustomerName: string;
+interface MovieItem {
+  MovieName: string;
   ContactId: string;
 }
 
@@ -32,7 +32,6 @@ export async function handler(
       statusCode: 200,
       headers: {
         "Access-Control-Allow-Origin": "*",
-        // event.headers.Origin ?? event.headers.origin ?? "",
         "Access-Control-Allow-Headers": "*",
         "Access-Control-Allow-Methods": "GET",
         "Access-Control-Expose-Headers": "*",
@@ -49,10 +48,10 @@ export async function handler(
     };
   }
 
-  const customers = await listCustomers();
+  const movies = await listMovies();
   return {
     statusCode: 200,
-    body: JSON.stringify(customers),
+    body: JSON.stringify(movies),
     headers: {
       "Access-Control-Allow-Origin": "*",
       // event.headers.Origin ?? event.headers.origin ?? "",
@@ -63,13 +62,13 @@ export async function handler(
   };
 }
 
-async function listCustomers(): Promise<CustomerItem[]> {
-  const customers: CustomerItem[] = [];
+async function listMovies(): Promise<MovieItem[]> {
+  const movies: MovieItem[] = [];
   const params: ScanCommandInput = {
     TableName: CUSTOMER_TABLE,
   };
   for await (const scanResult of paginateScan({ client: ddbClient }, params)) {
-    customers.push(...((scanResult.Items as CustomerItem[]) ?? []));
+    movies.push(...((scanResult.Items as MovieItem[]) ?? []));
   }
-  return customers;
+  return movies;
 }
