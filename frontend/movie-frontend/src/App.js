@@ -4,11 +4,26 @@ import Axios from "axios";
 
 function App() {
   const [movies, setProducts] = useState([]);
-  const [movieToggle, setMovieToggle] = useState(false);
+  const [name, setName] = useState("");
+  const [foundUsers, setFoundUsers] = useState(movies);
 
-  const listAllMovies = () => {
-    setMovieToggle((prevState) => !prevState);
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    if (keyword !== "") {
+      const results = movies.filter((movie) => {
+        return movie.name.toLowerCase().startsWith(keyword.toLowerCase());
+        // Use the toLowerCase() method to make it case-insensitive
+      });
+      setFoundUsers(results);
+    } else {
+      setFoundUsers(movies);
+      // If the text field is empty, show all users
+    }
+
+    setName(keyword);
   };
+
 
   const fetchMovies = async () => {
     const { data } = await Axios.get(
@@ -24,19 +39,32 @@ function App() {
   }, []);
 
   return (
-    <div style={{ marginLeft: "50px" }}>
-      <h1> Movie Database </h1>
-      <button type="button" onClick={listAllMovies}>
-        List all movies
-      </button>
-      {movieToggle
-        ? movies.map((movie) => (
-            <p key={movie.name}>
-              {movie.name} ({movie.year}) directed by {movie.director.firstName}{" "}
-              {movie.director.lastName}
-            </p>
+    <div className="container">
+      <h1>Movie Database</h1>
+      <input
+        type="search"
+        value={name}
+        onChange={filter}
+        className="input"
+        placeholder="Filter by movie name"
+      />
+
+      <div className="user-list">
+        {foundUsers && foundUsers.length > 0 ? (
+          foundUsers.map((movie) => (
+            <li key={movie.name} className="user">
+              <span className="user-id">{movie.name} </span>
+              <span className="user-name">({movie.year})</span>
+              <span className="user-age">
+                {" "}
+                by {movie.director.firstName} {movie.director.lastName}
+              </span>
+            </li>
           ))
-        : null}
+        ) : (
+          <h1>No results found!</h1>
+        )}
+      </div>
     </div>
   );
 }

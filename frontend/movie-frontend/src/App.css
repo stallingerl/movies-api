@@ -37,3 +37,40 @@
   }
 }
 
+.container {
+  padding-top: 30px;
+  width: 450px;
+  margin: auto;
+}
+
+.input {
+  padding: 5px 15px;
+  width: 300px;
+}
+
+.user-list {
+  margin-top: 30px;
+}
+
+.user {
+  list-style: none;
+  margin: 10px 0;
+  padding: 10px;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-id {
+  color: rgb(56, 12, 12);
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.user-name {
+  color: blue;
+}
+
+.user-age {
+  margin-left: auto;
+}
