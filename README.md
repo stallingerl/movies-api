@@ -7,7 +7,7 @@ The frontend is a static website hosted on S3, where you can list and search mov
 
 <p align="center">
   <img 
-  src="./img/lucid_chart.png"
+  src="./img/lucid_chart.PNG"
   raw=true 
   style="height:300px"
   />
