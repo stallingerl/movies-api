@@ -62,19 +62,19 @@
   width: auto;
 }
 
-.user-id {
+.movie-name {
   color: rgb(56, 12, 12);
   font-weight: bold;
   margin-right: 20px;
   width: 300px;
 }
 
-.user-name {
+.movie-year {
   color: blue;
   width: 100px;
 }
 
-.user-age {
+.movie-director {
   margin-left: auto;
   width: fit-content
 }

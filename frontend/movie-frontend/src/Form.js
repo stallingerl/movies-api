@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import useForm from "./UseForm";
 
-const FORM_ENDPOINT = "https://j37rcp3eo2.execute-api.eu-central-1.amazonaws.com/prod/update-movies"; // TODO - fill on the later step
+const FORM_ENDPOINT = "https://j37rcp3eo2.execute-api.eu-central-1.amazonaws.com/prod/add-movie"; // TODO - fill on the later step
 
 const Form = () => {
   const formElement = useRef(null);
@@ -71,15 +71,15 @@ const Form = () => {
         <input
           type="text"
           placeholder="Director last name"
-          name="directorLasstName"
+          name="directorLastName"
           className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />
       </div>
       <div className="mb-3 pt-0">
         <textarea
-          placeholder="Synopsis"
-          name="message"
+          placeholder="synopsis"
+          name="synopsis"
           className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />

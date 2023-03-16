@@ -1,11 +1,9 @@
 import {
   DynamoDBDocumentClient,
-  UpdateCommand,
-  GetCommand,
-  QueryCommand,
-  UpdateCommandInput,
+  PutCommandInput,
+  PutCommand,
 } from "@aws-sdk/lib-dynamodb";
-import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 import Logger from "@dazn/lambda-powertools-logger";
 
@@ -15,9 +13,12 @@ const ddbClient = DynamoDBDocumentClient.from(
   })
 );
 
-interface CustomerItem {
-  CustomerName: string;
-  ContactId: string;
+interface MovieItem {
+  name: string;
+  year: string;
+  directorFirstName: string;
+  directorLastName: string;
+  synopsis: string;
 }
 
 const CUSTOMER_TABLE = process.env.CUSTOMER_TABLE ?? "";
@@ -40,7 +41,7 @@ export async function handler(
         "Access-Control-Allow-Methods": "OPTIONS, POST",
         "Access-Control-Expose-Headers": "*",
       },
-      body: JSON.stringify({"message": ""}),
+      body: JSON.stringify({ message: "" }),
     };
   } else if (
     event.httpMethod !== "POST" ||
@@ -48,7 +49,7 @@ export async function handler(
   ) {
     return {
       statusCode: 405,
-      body: JSON.stringify({"message":"Method Not Allowed"}),
+      body: JSON.stringify({ message: "Method Not Allowed" }),
       headers: {
         "Access-Control-Allow-Origin": "*",
         // event.headers.Origin ?? event.headers.origin ?? "",
@@ -58,17 +59,24 @@ export async function handler(
       },
     };
   }
-  const inputCustomerItem: CustomerItem = JSON.parse(
-    event.body ?? "{}"
-  ) as CustomerItem;
-  const customerName = inputCustomerItem.CustomerName;
-  const contactId = inputCustomerItem.ContactId ?? "";
-  if (customerName && contactId) {
-    const customer = await updateCustomer(customerName, contactId);
-    if (!customer) {
+  const inputMovieItem: MovieItem = JSON.parse(event.body ?? "{}") as MovieItem;
+  const movieName = inputMovieItem.name;
+  const movieYear = inputMovieItem.year ?? "";
+  const directorFirstName = inputMovieItem.directorFirstName ?? "";
+  const directorLastName = inputMovieItem.directorLastName ?? "";
+  const synopsis = inputMovieItem.synopsis ?? "";
+  if (movieName) {
+    const movie = await putMovie(
+      movieName,
+      movieYear,
+      directorFirstName,
+      directorLastName,
+      synopsis
+    );
+    if (!movie) {
       return {
         statusCode: 404,
-        body: JSON.stringify({"message":"Not found"}),
+        body: JSON.stringify({ message: "Not found" }),
         headers: {
           "Access-Control-Allow-Origin": "*",
           // event.headers.Origin ?? event.headers.origin ?? "",
@@ -80,7 +88,7 @@ export async function handler(
     }
     return {
       statusCode: 200,
-      body: JSON.stringify({"message": "OK"}),
+      body: JSON.stringify({ message: "OK" }),
       headers: {
         "Access-Control-Allow-Origin": "*",
         // event.headers.Origin ?? event.headers.origin ?? "",
@@ -92,10 +100,9 @@ export async function handler(
   }
   return {
     statusCode: 405,
-    body: JSON.stringify({"message":"Method Not Allowed"}),
+    body: JSON.stringify({ message: "Method Not Allowed" }),
     headers: {
       "Access-Control-Allow-Origin": "*",
-      // event.headers.Origin ?? event.headers.origin ?? "",
       "Access-Control-Allow-Headers": "*",
       "Access-Control-Allow-Methods": "OPTIONS, POST",
       "Access-Control-Expose-Headers": "*",
@@ -103,27 +110,38 @@ export async function handler(
   };
 }
 
-async function updateCustomer(customerName: string, contactId: string) {
-  const updateParams: UpdateCommandInput = {
-    TableName: CUSTOMER_TABLE,
-    Key: {
-      CustomerName: customerName,
-    },
-    UpdateExpression: "set ContactId = :contactId",
-    ExpressionAttributeValues: {
-      ":contactId": contactId,
-    },
-    ReturnValues: "ALL_NEW",
-  };
+async function putMovie(
+  movieName: string,
+  movieYear: string,
+  directorFirstName: string,
+  directorLastName: string,
+  synopsis: string
+) {
 
-  let caseRecord: CustomerItem | undefined;
+  let caseRecord: string = movieName;
   try {
-    const result = await ddbClient.send(new UpdateCommand(updateParams));
-    caseRecord = result?.Attributes as CustomerItem;
+    const result = await ddbClient.send(new PutItemCommand({
+      TableName: CUSTOMER_TABLE,
+      Item: {
+        name: { S: movieName },
+        year: { N: movieYear.toString() },
+        director: {
+          M: {
+            "firstName": {
+              S: directorFirstName,
+            },
+            "lastName": {
+              S: directorLastName,
+            }
+          },
+        },
+        synopsis: { "S": synopsis },
+      }  
+    }));
   } catch (err) {
     Logger.error(
       "Failed to update info: ",
-      { pk: caseRecord?.CustomerName },
+      { pk: movieName },
       err as Error
     );
   }

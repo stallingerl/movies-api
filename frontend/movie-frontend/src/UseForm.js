@@ -21,6 +21,7 @@ function useForm({ form, additionalData, endpointUrl }) {
       if (additionalData) {
         Object.assign(data, additionalData);
       }
+      console.log("data ", data)
 
       fetch(finalFormEndpoint, {
         method: "POST",
@@ -39,7 +40,7 @@ function useForm({ form, additionalData, endpointUrl }) {
           return response.json();
         })
         .then(() => {
-          setMessage("We'll be in touch soon.");
+          setMessage("Movie saved.");
           setStatus("success");
         })
         .catch((err) => {

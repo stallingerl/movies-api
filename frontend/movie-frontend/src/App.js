@@ -58,9 +58,9 @@ function App() {
         {foundUsers && foundUsers.length > 0
           ? foundUsers.map((movie) => (
               <li key={movie.name} className="user">
-                <span className="user-id">{movie.name} </span>
-                <span className="user-name">({movie.year}) </span>
-                <span className="user-age">
+                <span className="movie-name">{movie.name} </span>
+                <span className="movie-year">({movie.year}) </span>
+                <span className="movie-director">
                   {" "}
                   directed by {movie.director.firstName}{" "}
                   {movie.director.lastName}
@@ -70,9 +70,9 @@ function App() {
             ))
           : movies.map((movie) => (
               <li key={movie.name} className="user">
-                <span className="user-id">{movie.name} </span>
-                <span className="user-name">({movie.year})</span>
-                <span className="user-age">
+                <span className="movie-name">{movie.name} </span>
+                <span className="movie-year">({movie.year})</span>
+                <span className="movie-director">
                   {" "}
                   by {movie.director.firstName} {movie.director.lastName}
                 </span>
