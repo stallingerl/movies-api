@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import Form from "./Form";
 
 function App() {
   const [movies, setProducts] = useState([]);
@@ -40,6 +41,11 @@ function App() {
   return (
     <div className="container">
       <h1>Movie Database</h1>
+      <h4>Add an additional movie</h4>
+      <div className="py-6">
+        <Form />
+      </div>
+      <p></p>
       <input
         type="search"
         value={name}
@@ -49,34 +55,30 @@ function App() {
       />
 
       <div className="user-list">
-        {foundUsers && foundUsers.length > 0 ? (
-          foundUsers.map((movie) => (
-            <li key={movie.name} className="user">
-              <span className="user-id">{movie.name} </span>
-              <span className="user-name">({movie.year}) </span>
-              <span className="user-age">
-                {" "}
-                directed by {movie.director.firstName} {movie.director.lastName} 
-                <p>
-                {movie.synopsis}</p>
-              </span>
-              
-            </li>
-          ))
-        ) : (
-          movies.map((movie) => (
-            <li key={movie.name} className="user">
-              <span className="user-id">{movie.name} </span>
-              <span className="user-name">({movie.year})</span>
-              <span className="user-age">
-                {" "}
-                by {movie.director.firstName} {movie.director.lastName}
-              </span>
-            </li>
-          ))
-        )}
+        {foundUsers && foundUsers.length > 0
+          ? foundUsers.map((movie) => (
+              <li key={movie.name} className="user">
+                <span className="user-id">{movie.name} </span>
+                <span className="user-name">({movie.year}) </span>
+                <span className="user-age">
+                  {" "}
+                  directed by {movie.director.firstName}{" "}
+                  {movie.director.lastName}
+                  <p>{movie.synopsis}</p>
+                </span>
+              </li>
+            ))
+          : movies.map((movie) => (
+              <li key={movie.name} className="user">
+                <span className="user-id">{movie.name} </span>
+                <span className="user-name">({movie.year})</span>
+                <span className="user-age">
+                  {" "}
+                  by {movie.director.firstName} {movie.director.lastName}
+                </span>
+              </li>
+            ))}
       </div>
-      <div className="addNewMovie"></div>
     </div>
   );
 }
