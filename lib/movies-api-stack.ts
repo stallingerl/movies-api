@@ -43,7 +43,7 @@ export class MovieApiStack extends Stack {
       },
       environment: {
         NODE_OPTIONS: "--enable-source-maps",
-        CUSTOMER_TABLE: moviesTable.tableName,
+        MOVIE_TABLE: moviesTable.tableName,
       },
       timeout: Duration.seconds(29),
     });
@@ -59,7 +59,7 @@ export class MovieApiStack extends Stack {
       },
       environment: {
         NODE_OPTIONS: "--enable-source-maps",
-        CUSTOMER_TABLE: moviesTable.tableName,
+        MOVIE_TABLE: moviesTable.tableName,
       },
       timeout: Duration.seconds(29),
     });

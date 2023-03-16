@@ -21,7 +21,7 @@ interface MovieItem {
   synopsis: string;
 }
 
-const CUSTOMER_TABLE = process.env.CUSTOMER_TABLE ?? "";
+const MOVIE_TABLE = process.env.MOVIE_TABLE ?? "";
 
 export async function handler(
   event: APIGatewayProxyEvent
@@ -121,7 +121,7 @@ async function putMovie(
   let caseRecord: string = movieName;
   try {
     const result = await ddbClient.send(new PutItemCommand({
-      TableName: CUSTOMER_TABLE,
+      TableName: MOVIE_TABLE,
       Item: {
         name: { S: movieName },
         year: { N: movieYear.toString() },

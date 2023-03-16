@@ -6,7 +6,7 @@ import Form from "./Form";
 function App() {
   const [movies, setProducts] = useState([]);
   const [name, setName] = useState("");
-  const [foundUsers, setFoundUsers] = useState(movies);
+  const [foundMovies, setfoundMovies] = useState(movies);
 
   const filter = (e) => {
     const keyword = e.target.value;
@@ -16,9 +16,9 @@ function App() {
         return movie.name.toLowerCase().startsWith(keyword.toLowerCase());
         // Use the toLowerCase() method to make it case-insensitive
       });
-      setFoundUsers(results);
+      setfoundMovies(results);
     } else {
-      setFoundUsers(movies);
+      setfoundMovies(movies);
       // If the text field is empty, show all users
     }
 
@@ -54,10 +54,10 @@ function App() {
         placeholder="Search movie by title"
       />
 
-      <div className="user-list">
-        {foundUsers && foundUsers.length > 0
-          ? foundUsers.map((movie) => (
-              <li key={movie.name} className="user">
+      <div className="movie-list">
+        {foundMovies && foundMovies.length > 0
+          ? foundMovies.map((movie) => (
+              <li key={movie.name} className="movie">
                 <span className="movie-name">{movie.name} </span>
                 <span className="movie-year">({movie.year}) </span>
                 <span className="movie-director">
@@ -69,7 +69,7 @@ function App() {
               </li>
             ))
           : movies.map((movie) => (
-              <li key={movie.name} className="user">
+              <li key={movie.name} className="movie">
                 <span className="movie-name">{movie.name} </span>
                 <span className="movie-year">({movie.year})</span>
                 <span className="movie-director">

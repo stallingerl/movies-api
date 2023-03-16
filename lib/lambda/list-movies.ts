@@ -18,7 +18,7 @@ interface MovieItem {
   ContactId: string;
 }
 
-const CUSTOMER_TABLE = process.env.CUSTOMER_TABLE ?? "";
+const MOVIE_TABLE = process.env.MOVIE_TABLE ?? "";
 
 export async function handler(
   event: APIGatewayProxyEvent
@@ -65,7 +65,7 @@ export async function handler(
 async function listMovies(): Promise<MovieItem[]> {
   const movies: MovieItem[] = [];
   const params: ScanCommandInput = {
-    TableName: CUSTOMER_TABLE,
+    TableName: MOVIE_TABLE,
   };
   for await (const scanResult of paginateScan({ client: ddbClient }, params)) {
     movies.push(...((scanResult.Items as MovieItem[]) ?? []));
